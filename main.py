@@ -4,13 +4,13 @@ from twilio.rest import Client
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-alphavantage_api_key = "BU9KEUYYOOB1DZ5M"
-NEWS_API = "aaa414cf00904fd58fe22799357824a2"
-API_TWILIO_KEY = "55c6376dc505c3b473e65ac4e4cdc91d"
-account_sid = 'AC3acb01867887d8cc6984ac7e373d3074'
-auth_token = '016b8500710dfde50fcb9f20ce1b6c7c'
+alphavantage_api_key = "secretkey"
+NEWS_API = "secretkey"
+API_TWILIO_KEY = "secretkey"
+account_sid = "secretkey"
+auth_token = "secretkey"
 
-my_phone = "+19127156145"
+my_phone = "secretkey"
 
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
@@ -72,7 +72,7 @@ for article in formatted_articles_list:
         .create(
         body=f"{article}",
         from_=my_phone,
-        to='+972509701013'
+        to='some phone number'
     )
 
     print(message.status)
